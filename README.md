@@ -7,7 +7,8 @@ We are currently looking for volunteers who would like to help build this commun
 For feature requests and suggestions, please create a ticket with the description on this kanban board: https://github.com/SaitoTech/community-forum/projects/1. 
 
 Status: Ideation
-Partipate: https://cforum.saito.io/post
+
+Application: https://cforum.saito.io/post
 
 **For Developers**
 
