@@ -6,6 +6,9 @@ We are currently looking for volunteers who would like to help build this commun
 
 For feature requests and suggestions, please create a ticket with the description on this kanban board: https://github.com/SaitoTech/community-forum/projects/1. 
 
+Status: Ideation
+Partipate: https://cforum.saito.io/post
+
 **For Developers**
 
 To setup your workspace locally and setup a node, kindly view this tutorial in wiki: https://wiki.saito.io/tech/installation
