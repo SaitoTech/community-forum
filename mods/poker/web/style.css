@@ -1,0 +1,167 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden; 
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.gameboard{
+  /* Default fill the background with image */
+  position: absolute;
+  background-image: url("img/gameboard.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* Since Poker only has two cards in a hand, can adjust the angles*/
+.cardfan>.card:nth-child(1), .hand>.card:nth-child(1) {
+  transform: rotate(-15deg);
+  left: 0px; 
+} 
+  
+.cardfan>.card:nth-child(2), .hand>.card:nth-child(2) {
+  transform: rotate(-5deg);
+  left: 3vh;
+}
+
+
+.hand {
+  position: relative;
+}
+
+
+.deal .card {
+  width: max(11vw,100px);
+  max-width: min(13vh,150px);
+}
+
+.deal {
+  margin: 0 auto;
+  position: absolute;
+  top: 40vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: unset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+.pot {
+  position: absolute;
+  top: 32vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  background-color: #4448;
+  padding: 1vh 1.5em;
+  text-align: center;
+  height: 7vh;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #efefef;
+}
+
+
+.player-info-chips {
+  text-align: center;
+  font-size: max(1em,2.5vh);
+  overflow: hidden;
+}
+
+.plog-update{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.suit {
+  font-size: larger;
+}
+
+.htmlhand{
+  text-indent: 0; 
+}
+
+.htmlCard {
+  margin: 5px 3px;
+  display: inline-block;
+  background: #fffD;
+  padding: 4px 3px;
+  border-radius: 6px;
+}
+
+
+/*Playerbox text menu prompt*/
+.menu-player {
+  font-size: 1em;
+  font-weight: bolder;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+/* Player Markers */
+.dealerbutton{
+  color: #fff;
+  width: 1em;
+  margin-left: 0.5vw;
+  font-size: 2.5vh;
+  line-height: 2.5vh;
+  -webkit-text-stroke: 1px #444;
+}
+.tip{
+  width: unset;
+}
+.tiptext{
+  min-width: unset;
+  width: unset;
+  border: none;
+  line-height: 1em;
+  padding: 0.5em;
+  background-color: #fefefeee;
+}
+
+
+
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  /* Common elements */ 
+  .deal .card {
+    width: 8vw;
+  }
+  .pot {
+    top: 30vh;
+    font-size: 2.4em;
+  }
+ 
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 600px) {
+  .pot {
+    top: 30vh;
+    font-size: 2.4em;
+  }
+
+  /* Table cards */
+  .deal {
+    top: 38vh;
+    /*Slightly to left to accommodate log*/
+    width: 90vw;
+    left: 49vw;
+  }
+
+  .deal .card {
+    width: 100% /*of grid slot*/
+  }
+
+}
+
+
+
